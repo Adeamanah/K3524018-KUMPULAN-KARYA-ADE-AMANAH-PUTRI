@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Latihan 1</title>
+</head>
+<body>
+  <h2>Kalkulator Sederhana</h2>
+
+  <label>Angka pertama:</label>
+  <input type="number" id="angka1"><br><br>
+
+  <label>Angka kedua:</label>
+  <input type="number" id="angka2"><br><br>
+  
+  <label>pilih operasi bilangan yang diinginkan</label><br><br>
+  <button onclick="tambah()">Jumlah</button>
+  <button onclick="kurang()">Kurang</button>
+  <button onclick="kali()">Kali</button>
+  <button onclick="bagi()">Bagi</button>
+
+  <p>Hasil: <span id="hasil"></span></p>
+
+  <script>
+    function tambah() {
+      var a = parseFloat(document.getElementById("angka1").value);
+      var b = parseFloat(document.getElementById("angka2").value);
+      document.getElementById("hasil").innerHTML = a + b;
+    }
+
+    function kurang() {
+      var a = parseFloat(document.getElementById("angka1").value);
+      var b = parseFloat(document.getElementById("angka2").value);
+      document.getElementById("hasil").innerHTML = a - b;
+    }
+
+    function kali() {
+      var a = parseFloat(document.getElementById("angka1").value);
+      var b = parseFloat(document.getElementById("angka2").value);
+      document.getElementById("hasil").innerHTML = a * b;
+    }
+
+    function bagi() {
+      var a = parseFloat(document.getElementById("angka1").value);
+      var b = parseFloat(document.getElementById("angka2").value);
+      if (b == 0) {
+        alert("Tidak bisa dibagi dengan nol!");
+      } else {
+        document.getElementById("hasil").innerHTML = a / b;
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animasi Transisi CSS3</title>
+    <meta name=""viewport" content="width-device-width, initial-scale=0.1">
+
+    <style typ=""text/css">
+        .box{
+            width: 10%;
+            height: 100px;
+            background: orange;
+            border: 2px solid #212121;
+
+            -webkit-transition: width 1s ease-in-out;
+            -o-transition: width 1s ease-in-out;
+            -moz-transition: width 1s ease-in-out;
+            transition: width 1s ease-in-out;
+        }
+
+        @media (orientation: landscape){
+            .box{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Transisi CSS3</h1>
+
+    <div class="box"></div>
+    <p>
+        <h1>ubah orientasi ke landscape/potraait dan sebaliknya untuk melihat transisi</h1>
+    </p>
+</body>
+</html>

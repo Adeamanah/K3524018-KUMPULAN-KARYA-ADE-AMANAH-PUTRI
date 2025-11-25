@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white; 
+}
+
+#identitas {
+    background-color: #e6e6e6; 
+    border-bottom: 1px solid #ccc;
+}
+
+#footer {
+    background-color: #e6e6e6;
+    border-top: 1px solid #ccc;
+    border-bottom: none;
+}
+
+.main-content-row {
+    min-height: 450px; 
+}
+
+.box {
+    background-color: #e6e6e6; 
+    height: 100%; 
+    padding: 20px; 
+    box-sizing: border-box;
+    border: 1px solid #ccc; 
+}
+.box-title {
+    background-color: white; 
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #444;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .main-content-row {
+        height: 450px;
+    }
+
+    .box-testimoni {
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    .box-kritik {
+        height: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .box-saran {
+        height: 50%;
+    }
+}

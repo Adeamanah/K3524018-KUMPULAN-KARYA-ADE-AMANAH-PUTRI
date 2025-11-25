@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Tab</title>
+    
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <style>
+        #tabs {
+            width: 80%;
+            margin: 50px auto; 
+        }
+
+        .ui-tabs .ui-tabs-nav .ui-tabs-active {
+            background: #007bff !important;
+            border-bottom: 1px solid #007bff !important;
+            color: white !important; 
+        }
+
+        .ui-tabs .ui-tabs-nav .ui-tabs-active a {
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs1">Tab 1</a></li>
+            <li><a href="#tabs2">Tab 2</a></li>
+            <li><a href="#tabs3">Tab 3</a></li>
+        </ul>
+
+        <div id="tabs1">
+            <p>Ini adalah Tab 1</p>
+        </div>
+        
+        <div id="tabs2">
+            <p>Ini adalah Tab 2</p>
+        </div>
+        
+        <div id="tabs3">
+            <p>Ini adalah Tab 3</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#tabs").tabs();
+        });
+    </script>
+</body>
+</html>

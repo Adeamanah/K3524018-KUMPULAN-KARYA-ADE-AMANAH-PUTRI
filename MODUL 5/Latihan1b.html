@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menggunakan media Query CSS3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .smartphone {
+            display: none;
+        }
+        .logo {
+            display: none;
+            width: 150px;
+            margin: 20px auto;
+        }
+        .text {
+            display: none;
+        }
+
+        @media only screen and (max-width: 428px) {
+            body {
+                background-color: yellow;
+                text-align: center;
+            }
+
+            .smartphone {
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width: 1025px){
+            body {
+                background-color: azure;
+                text-align: center;
+            }
+
+            .logo {
+                display: block;
+                width: 500px;
+                max-width: 80%;
+                margin: 40px auto 10px auto;
+            }
+            .text {
+                display: block;
+                font-size: 30px;
+                color:darkblue;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Menggunakan Media Query CSS 3</h1>
+    <div class="smartphone">
+        <h2>Terdeteksi ukuran smartphone</h2>
+    </div>
+
+    <img src="Logo.png" alt="Logo UNS" class="logo">
+    <div class="text">
+        Ukuran dekstop lebih dari 1024px, Logo Muncul
+    </div>
+</body>
+</html>
